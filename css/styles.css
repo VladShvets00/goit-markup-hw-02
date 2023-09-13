@@ -84,7 +84,8 @@ letter-spacing: 2.64px;
   color: var(--title-txt-cl);
 }
 
-.about-title{
+.about-title,
+.gallery-title{
     color: var(--secondary-txt-cl);
     font-family: var(--main-font);
 font-size: 14px;
@@ -94,12 +95,12 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 }
 
-.about-text{
+.about-text,
+.gallery-text{
     color: var(--main-txt-cl);
 font-family: var(--main-font);
 font-size: 14px;
 font-style: normal;
-font-weight: 400;
 line-height: 1.72; 
 letter-spacing: 0.42px;
 }
