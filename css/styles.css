@@ -19,9 +19,24 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    background: var(--main-bg-cl);
 }
+
+.visually-hidden{
+    display: none;
+}
+
+.list{
+list-style-type: none;
+}
+
+.team{
+    background: #F5F4FA;
+}
+
+
 .footer{
-    background-color: var(--dark-bg-cl);
+background-color: var(--dark-bg-cl);
 }
 
 .navigation .logo,
@@ -41,12 +56,20 @@ letter-spacing: 0.78px
 
 
 .link{
-    color: var(--secondary-txt-cl);
+color: var(--secondary-txt-cl);
 font-size: 14px;
 font-weight: 500;
 letter-spacing: 0.28px;
-text-decoration: none
+text-decoration: none;
+font-family: var(--main-font);
+}
 
+.contact-link{
+color: var(--main-txt-cl);
+}
+
+.active-link{
+color: var(--accent-cl)
 
 }
 
@@ -54,11 +77,17 @@ text-decoration: none
 .link:focus {
   color: var(--accent-cl);
 }
+.address-link:hover,
+.address-link:focus
+{
+    color: var(--title-txt-cl)
+}
 
 .hero{
     background-color: var(--dark-bg-cl) ;
 }
 .hero-title{
+font-family: var(--main-font) ;
 color: var(--title-txt-cl);
 text-align: center;
 font-size: 44px;
@@ -69,12 +98,12 @@ letter-spacing: 2.64px;
 
 .btn {
     font-family: inherit;
-    color: var(--title-txt-cl);
+    /* color: var(--title-txt-cl); */
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.96px;
     text-transform: uppercase;
-    background-color: var(--accent-cl);
+    /* background-color: var(--accent-cl); */
     cursor: pointer;
     text-align: center;
 }
@@ -82,7 +111,28 @@ letter-spacing: 2.64px;
 .btn:hover,
 .btn:focus {
   color: var(--title-txt-cl);
+  background-color: var(--accent-cl);
 }
+.hero-btn{
+color: var(--title-txt-cl);
+text-align: center;
+font-family: var(--main-font);
+font-size: 16px;
+font-weight: 700;
+line-height:  1.88;
+letter-spacing: 0.96px;
+border-radius: 4px;
+background: var(--accent-cl);
+margin: 0 auto;
+display: block
+}
+.active-btn{
+    color: var(--title-txt-cl);
+    background-color: var(--accent-cl);
+
+
+}
+
 
 .about-title,
 .gallery-title{
@@ -116,7 +166,8 @@ font-weight: 700;
 letter-spacing: 1.08px;
 }
 
-.member-title{
+.member-title
+{
     color: #212121;
 text-align: center;
 font-family: var(--main-font);
